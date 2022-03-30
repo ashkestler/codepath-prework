@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Simon-esque!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    <!-- import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Simon-esque!
+    </h1>
+    <p>
+      Repeat the pattern back correctly to win the game!
+    </p>
+    
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/55bed4d5-9beb-492a-aaa4-f2e44b4fcd9c/eye.png?v=1648649065460" alt="eye" ></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/55bed4d5-9beb-492a-aaa4-f2e44b4fcd9c/tree.png?v=1648652250282" alt="tree"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/55bed4d5-9beb-492a-aaa4-f2e44b4fcd9c/seashell.png?v=1648653958661" alt="seashell"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/55bed4d5-9beb-492a-aaa4-f2e44b4fcd9c/airplane.png?v=1648654601293" alt="airplane"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/55bed4d5-9beb-492a-aaa4-f2e44b4fcd9c/snowflake.png?v=1648654917972" alt="snowflake"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"><img src="https://cdn.glitch.global/55bed4d5-9beb-492a-aaa4-f2e44b4fcd9c/megaphone.png?v=1648655389093" alt="megaphone"></button>
+    </div>
+    
+  </body>
+</html>
